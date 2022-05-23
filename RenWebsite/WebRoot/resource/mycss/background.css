@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* body 背景圖片css */
+tm-body-bg-img{
+	background-size: cover;
+	background: url("./images/web_background");	
+	background: rgba(255, 255, 255, 0.3);
+}
