@@ -20,7 +20,11 @@
 			</h3>
 		</div>
 	</form>
-		
+	
+	<div class="file_div" align="center">
+		<input class="file_input" id="filename" type="text" placeholder="Pleace Enter The File Name"> 
+	</div>
+	
 	<iframe id="iframepage" src="http://www.top8889.com.tw/AccPlate/ind.htm" frameborder="0" scrolling="yes" onload="changeFrameHeight()" />
 	
 </body>

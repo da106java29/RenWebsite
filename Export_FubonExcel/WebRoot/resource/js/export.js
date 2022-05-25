@@ -9,7 +9,17 @@ function doExportExcel(){
 		
 	let url = "WebController";
 	let async = false;
-	let params = "dataUrl=" + document.getElementById("iframepage").src;
+	let filename;
+	let src = "dataUrl=" + document.getElementById("iframepage").src;
+	let params;
+	
+	if(document.getElementById("filename").value != ""){
+		filename = document.getElementById("filename").value;
+	}else{
+		filename = "ExportExcel_ByJava";
+	}
+	
+	params = "dataUrl=" + document.getElementById("iframepage").src + "&filename=" + filename;
 	
 	let xhr = new XMLHttpRequest();
 	
