@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.codec.binary.StringUtils;
+import org.apache.commons.collections4.ListUtils;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.DataFormat;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -111,7 +112,6 @@ public class WebController extends HttpServlet{
 				
 				//內容 文字+超鏈結
 				ArrayList<Url_Bean> contentList = new ArrayList<Url_Bean>();
-				Url_Bean urlBean = new Url_Bean();
 				
 				if(contextItems.isEmpty()) {
 					
@@ -134,6 +134,8 @@ public class WebController extends HttpServlet{
 						String aName = aContextItem.getElementsByTag("a").get(0).html();
 						
 						String aHref = aContextItem.getElementsByTag("a").attr("href");
+						
+						Url_Bean urlBean = new Url_Bean();
 						
 						if(!StringUtils.equals(aHref, "")) {
 							aHref = baseURL + aHref;
@@ -207,6 +209,7 @@ public class WebController extends HttpServlet{
 			ArrayList<SubContext_VO> subVoList = mainVO.getSubList();
 			
 			//需要幾列(以副標題數量決定)
+			int rowCnt = 0;
 			int cellCnt = 0;
 			XSSFRow row = sheet.createRow(1);
 			
@@ -221,16 +224,18 @@ public class WebController extends HttpServlet{
 				
 				ArrayList<Url_Bean> urlBeanList = subVO.getSubContextList();
 				
-//				for(Url_Bean bean : urlBeanList) {
-//					XSSFCell cell_url = row.createCell(++cellCnt);
-//					cell_url.setCellValue(bean.getUrlName() + " : " + bean.getUrl());
-//				}
+				for(Url_Bean bean : urlBeanList) {
+					XSSFCell cell_url = row.createCell(++cellCnt);
+					cell_url.setCellValue(bean.getUrlName() + " : " + bean.getUrl());
+				}
 				
 			}
+			
+			//ListUtils.partition(null, cellCnt);
 		}
 		
 		
-		String excelFilePath = "D:\\export1.xlsx";
+		String excelFilePath = "D:\\" + this.fileName;
 		
 		try {
 			FileOutputStream os = new FileOutputStream(excelFilePath);
