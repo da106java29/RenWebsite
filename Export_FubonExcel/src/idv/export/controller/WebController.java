@@ -235,7 +235,11 @@ public class WebController extends HttpServlet{
 		}
 		
 		
+<<<<<<< HEAD
 		String excelFilePath = "D:\\" + this.fileName;
+=======
+		String excelFilePath = "D:\\" + fileName;
+>>>>>>> a358960b6ec002fb2844f2438d45a82cac69fd82
 		
 		try {
 			FileOutputStream os = new FileOutputStream(excelFilePath);
