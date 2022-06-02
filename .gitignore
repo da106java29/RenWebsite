@@ -4,3 +4,4 @@
 /LiteAce/
 .gitignore.bak
 .class
+*.sh
