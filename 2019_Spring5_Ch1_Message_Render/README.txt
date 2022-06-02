@@ -1,0 +1,1 @@
+Pratice interface、Factory mode.

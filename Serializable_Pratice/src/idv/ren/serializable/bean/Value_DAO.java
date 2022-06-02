@@ -9,7 +9,7 @@ public class Value_DAO implements MyDao_Face{
 	private String value;
 	
 	@Override
-	public String getKey() {
+	public String getName() {
 		return this.name;
 	}
 
@@ -17,5 +17,14 @@ public class Value_DAO implements MyDao_Face{
 	public String getValue() {
 		return this.value;
 	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
+	}
+	
 	
 }

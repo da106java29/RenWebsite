@@ -5,7 +5,7 @@ import idv.ren.serializable.interfaces.MyDao_Face;
 public class DAOUtils {
 	
 	public static void getName(MyDao_Face mf) {
-		mf.getKey();
+		mf.getName();
 		
 		mf.getValue();
 	}

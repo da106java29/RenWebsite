@@ -9,17 +9,13 @@ public class Key_DAO implements MyDao_Face{
 	private String value;
 	
 	@Override
-	public String getKey() {
+	public String getName() {
 		return this.name;
 	}
 
 	@Override
 	public String getValue() {
 		return this.value;
-	}
-
-	public String getName() {
-		return name;
 	}
 
 	public void setName(String name) {
