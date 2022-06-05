@@ -8,6 +8,9 @@ RenWebSite -Ren A Life A Code
 	footer		樣式、提供、小字條
 
 
+Front-End Framework:
+	利用context 容器啟動時注入XML核心，xml根據對應路徑，去使用對應的Template
+
 Front-End:
 	1. 使用jsp製作。
 	2. 引用Bootstrap5。

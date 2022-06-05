@@ -14,8 +14,6 @@
 	
 	<context:annotation-config />	
 	
-	<bean>
-		
-	</bean>
+	<import resource="spring-mvc.xml"/>
 
 </beans>
