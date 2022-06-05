@@ -33,6 +33,11 @@ import idv.export.po.Url_Bean;
 @WebServlet("/WebController")
 public class WebController extends HttpServlet{
 	
+	/**
+	 * 邏輯停更。
+	 * 原USER表示沒要用了。
+	 */
+	
 	private String fileName;
 	
 	@Override

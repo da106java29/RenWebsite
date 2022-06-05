@@ -1,0 +1,36 @@
+RenWebSite -Ren A Life A Code
+	
+構想功能:
+	title		大標題、樣式等等設定
+	Side Bar	功能跳轉(*待新增)
+				-Note Book
+				-記帳
+	footer		樣式、提供、小字條
+
+
+Front-End:
+	1. 使用jsp製作。
+	2. 引用Bootstrap5。
+	3. 原生Javascript 作為前端資料傳輸。
+	4. Body 每個功能不同設定，
+		Title、Side Bar、Footer: 想客製插入Template方式製作，
+		EX: 
+			登入頁面在 WEB-INF->Login，
+			根據 XML 設定，插入對應Template，如:
+				/resource/Template/login/** -> Login_Title、Login_Side、Login_Footer
+				
+			**註: 想使用此方式是因為，尚未發現有這種邏輯的套件，SiteMesh是把jsp內容塞入Sitemesh Template，
+				  但這樣會需要客製整頁 Sitemesh Template， 並非我想要，未來想修改小部分地方如:Title，要馬整頁修改，
+				  要馬再多做一個整頁Template，導致Title1、2重複Footer or Side Bar 過多。
+	
+Back-End:
+	1. Use Spring 5 Framework。
+	2. Custom Java Bean OR Spring Bean 作為 後端資料處理格式。
+		- Custom Convert Front-End Data to Java Bean to useing.
+	etc.
+	
+DataBase:
+	MySQL:
+		Something etc.
+	
+		

@@ -5,3 +5,4 @@
 .gitignore.bak
 .class
 *.sh
+*.bak
