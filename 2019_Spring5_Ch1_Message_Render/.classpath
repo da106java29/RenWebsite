@@ -2,15 +2,14 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/javaLib/junit-jupiter-api-5.8.2.jar"/>
-	<classpathentry kind="lib" path="C:/javaLib/spring-aspects-5.3.20.jar"/>
-	<classpathentry kind="lib" path="C:/javaLib/spring-beans-5.3.20.jar"/>
-	<classpathentry kind="lib" path="C:/javaLib/spring-context-5.3.20.jar"/>
-	<classpathentry kind="lib" path="C:/javaLib/spring-context-support-5.3.20.jar"/>
-	<classpathentry kind="lib" path="C:/javaLib/spring-core-5.3.20.jar"/>
-	<classpathentry kind="lib" path="C:/javaLib/spring-jdbc-5.3.20.jar"/>
-	<classpathentry kind="lib" path="C:/javaLib/spring-tx-5.3.20.jar"/>
-	<classpathentry kind="lib" path="C:/javaLib/spring-web-5.3.20.jar"/>
-	<classpathentry kind="lib" path="C:/javaLib/spring-webmvc-5.3.20.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aspects-5.3.20.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-5.3.20.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-5.3.20.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-support-5.3.20.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-5.3.20.jar"/>
+	<classpathentry kind="lib" path="lib/spring-jdbc-5.3.20.jar"/>
+	<classpathentry kind="lib" path="lib/spring-tx-5.3.20.jar"/>
+	<classpathentry kind="lib" path="lib/spring-web-5.3.20.jar"/>
+	<classpathentry kind="lib" path="lib/spring-webmvc-5.3.20.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
