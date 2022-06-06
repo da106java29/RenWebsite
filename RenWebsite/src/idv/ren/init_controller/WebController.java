@@ -24,7 +24,7 @@ public class WebController {
 	public ModelAndView index(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
 
-		ModelAndView view = new ModelAndView("index1");
+		ModelAndView view = new ModelAndView("demo/demo");
 		
 		ws.show();
 		

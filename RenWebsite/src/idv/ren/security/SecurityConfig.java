@@ -10,7 +10,8 @@ import org.springframework.security.web.SecurityFilterChain;
  * @author Ren
  *
  */
-@EnableWebSecurity
+//
+//@EnableWebSecurity
 public class SecurityConfig{
 	
 	@Bean
