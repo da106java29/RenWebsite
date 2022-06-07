@@ -31,4 +31,10 @@ public class WebController {
 		return view;
     }
 	
+//	@RequestMapping("/")
+//	public String index() {
+//		ws.show();
+//		return "demo/demo";
+//	}
+	
 }

@@ -13,24 +13,30 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	
+	<mvc:annotation-driven />
+	
 	<!-- JS / CSS 資源 -->
 	<mvc:resources location="/resource/**" mapping="/resource/" />
+	<mvc:default-servlet-handler/>
 	
 	<!-- 視圖解析器 -->
 	<bean id="spring_viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
+		<property name="order" value="1" />
 	</bean>
-<!-- 	<bean id="viewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver"> -->
-<!-- 		<property name="prefix" value="/WEB-INF/views/" /> -->
-<!-- 		<property name="suffix" value=".jsp" /> -->
+<!-- 	<bean id="tiles3_viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver"> -->
+<!-- 		<property name="order" value="1" /> -->
+<!-- 		<property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" /> -->
 <!-- 	</bean> -->
 	
 	<!-- 啟動Spring MVC的註解功能 -->
-	<mvc:annotation-driven content-negotiation-manager="contentNegotiationManager"/>
-	<bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
-		<property name="favorPathExtension" value="false" />
-	    <property name="defaultContentType" value="application/json"/>
-	</bean>
+<!-- 	<mvc:annotation-driven content-negotiation-manager="contentNegotiationManager"/> -->
+<!-- 	<bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean"> -->
+<!-- 		<property name="favorPathExtension" value="false" /> -->
+<!-- 	    <property name="defaultContentType" value="application/json"/> -->
+<!-- 	</bean> -->
+	
+	
 	
 </beans>

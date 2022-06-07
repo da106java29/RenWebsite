@@ -7,7 +7,7 @@
 	<display-name>RenWebsite</display-name>
 	
 	<welcome-file-list>
-		<welcome-file>demo.jsp</welcome-file>
+		<welcome-file>demo/demo.jsp</welcome-file>
 	</welcome-file-list>
 
 	<!-- Spring DispatcherServlet -->
@@ -31,10 +31,10 @@
 		<servlet-name>Tiles Dispatch Servlet</servlet-name>
 		<servlet-class>org.apache.tiles.web.util.TilesDispatchServlet</servlet-class>
 	</servlet>
-	<servlet-mapping>
-		<servlet-name>Tiles Dispatch Servlet</servlet-name>
-		<url-pattern>*.tiles</url-pattern>
-	</servlet-mapping>
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>Tiles Dispatch Servlet</servlet-name> -->
+<!-- 		<url-pattern>*.tiles</url-pattern> -->
+<!-- 	</servlet-mapping> -->
 
 	<listener>
 		<listener-class>org.apache.tiles.extras.complete.CompleteAutoloadTilesListener</listener-class>

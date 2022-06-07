@@ -11,7 +11,7 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	
-	<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+	<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer" lazy-init="false">
 		<property name="definitions">
 			<list>
 				<value>/WEB-INF/tiles.xml</value>
@@ -19,8 +19,10 @@
 		</property>
 	</bean>
 	<bean id="tiles3_viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-		<property name="order" value="1" />
+		<property name="order" value="0" />
 		<property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />
+		<property name="prefix" value="/WEB-INF/views/tiles/" />
+		<property name="suffix" value=".jsp" />
 	</bean>
 	<!-- 
 	<bean>

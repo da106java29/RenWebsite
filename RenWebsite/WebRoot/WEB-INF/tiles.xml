@@ -16,16 +16,16 @@
 	</definition>
 	
 	<!-- 首頁-無任何權限可閱覽畫面 -->
-	<definition name="demo_templates" template="/WEB-INF/views/tiles/demo/layout.jsp">
-		<put-attribute name="header" value="/WEB-INF/views/tiles/demo/header.jsp" ></put-attribute>
-		<put-attribute name="menu" value="/WEB-INF/views/tiles/demo/menu.jsp" ></put-attribute>
-		<put-attribute name="body" value="" ></put-attribute>
-		<put-attribute name="footer" value="/WEB-INF/views/tiles/demo/footer.jsp" ></put-attribute>
+	<definition name="demo_templates" template="/WEB-INF/views/demo/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/tiles/demo/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/tiles/demo/menu.jsp" />
+<!-- 		<put-attribute name="body" value="" /> -->
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/demo/footer.jsp" />
 	</definition>
-	
-	<definition name="*.page" extends="demo_templates">
-		<put-attribute name="body" value="/WEB-INF/views/demo/demo.jsp" />
-	</definition>
+	<!-- 引用模板 視圖名 + .page -->
+<!-- 	<definition name="demo/*" extends="demo_templates"> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/views/demp/{2}.jsp"/> -->
+<!-- 	</definition> -->
 	
 	
 </tiles-definitions>
