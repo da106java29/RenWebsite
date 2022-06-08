@@ -17,6 +17,7 @@
 	
 	<!-- JS / CSS 資源 -->
 	<mvc:resources location="/resource/**" mapping="/resource/" />
+	
 	<mvc:default-servlet-handler/>
 	
 	<!-- 視圖解析器 -->
@@ -36,7 +37,5 @@
 <!-- 		<property name="favorPathExtension" value="false" /> -->
 <!-- 	    <property name="defaultContentType" value="application/json"/> -->
 <!-- 	</bean> -->
-	
-	
 	
 </beans>
