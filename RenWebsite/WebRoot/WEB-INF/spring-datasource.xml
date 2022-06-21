@@ -38,6 +38,8 @@
 <!--         </property>  -->
 <!--      </bean> -->
      
+     <!-- MySQL DataSource -->
+	 <!-- 連線資訊 -->
      <bean id="dataSourceHikari" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
      	<property name="driverClassName"> 
             <value>${jdbc.driverClassName}</value> 
