@@ -6,3 +6,15 @@ tm-body-bg-img{
 	background: url("./images/sakura-header.png");	
 	background: rgba(255, 255, 255, 0.3);
 }
+
+.header-background {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../images/sakura-header.png");
+}
+
+.demo-header-div{
+	height: auto;
+	width: auto;
+	margin: 5px;
+}

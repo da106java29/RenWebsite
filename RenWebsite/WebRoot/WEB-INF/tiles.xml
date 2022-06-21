@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- 前端頁面模板 -->
+	<definition name="tiles_templates" template="/WEB-INF/views/tiles/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/tiles/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp" />
+	</definition>
+	
+	<!-- 引用模板 視圖名 + .page -->
+	<definition name="*.page" extends="tiles_templates">
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+	
+	<!-- 首頁-無任何權限可閱覽畫面 -->
+	<definition name="demo_templates" template="/WEB-INF/views/demo/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/tiles/demo/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/tiles/demo/menu.jsp" />
+<!-- 		<put-attribute name="body" value="" /> -->
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/demo/footer.jsp" />
+	</definition>
+	<!-- 引用模板 視圖名 + .page -->
+<!-- 	<definition name="demo/*" extends="demo_templates"> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/views/demp/{2}.jsp"/> -->
+<!-- 	</definition> -->
+	
+	
+</tiles-definitions>

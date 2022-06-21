@@ -1,16 +1,13 @@
 package idv.ren.security;
 
-import javax.servlet.ServletContext;
+//public class WebSecurityConfig extends AbstractSecurityWebApplicationInitializer{
 
-import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
-
-import idv.ren.sitemesh.SiteMeshFilter;
-
-public class WebSecurityConfig extends AbstractSecurityWebApplicationInitializer{
-
-	@Override
-	protected void afterSpringSecurityFilterChain(ServletContext servletContext) {
-		// TODO Auto-generated method stub
-		insertFilters(servletContext, new SiteMeshFilter());
-	}
+//	@Override
+//	protected void afterSpringSecurityFilterChain(ServletContext servletContext) {
+//		// TODO Auto-generated method stub
+//		insertFilters(servletContext, new SiteMeshFilter());
+//	}
+//}
+public class WebSecurityConfig{
+	
 }

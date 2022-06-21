@@ -24,6 +24,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.parser.Parser;
 import org.jsoup.select.Elements;
 
 import idv.export.po.MainContext_VO;
@@ -90,6 +91,7 @@ public class WebController extends HttpServlet{
 		String webUrl = request.getParameter("dataUrl");
 		
 		Document doc = Jsoup.connect(webUrl).get();
+		//Document xml = Jsoup.parse("a", "UTF-8", Parser.xmlParser());	
 		
 		Elements items = doc.getElementsByClass("bd");
 		

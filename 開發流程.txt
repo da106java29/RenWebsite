@@ -25,6 +25,12 @@ Front-End:
 			**註: 想使用此方式是因為，尚未發現有這種邏輯的套件，SiteMesh是把jsp內容塞入Sitemesh Template，
 				  但這樣會需要客製整頁 Sitemesh Template， 並非我想要，未來想修改小部分地方如:Title，要馬整頁修改，
 				  要馬再多做一個整頁Template，導致Title1、2重複Footer or Side Bar 過多。
+				  
+	邏輯處理:
+		1. 提供訪客頁:index.jsp
+		2. 訪客頁有登入按鈕，跳轉至/views/login/login.jsp
+		3. 中間會有Spring Security驗證
+		
 	
 Back-End:
 	1. Use Spring 5 Framework。

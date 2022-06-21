@@ -2,6 +2,7 @@
 /Servers/
 /software/
 /LiteAce/
+/DarkSpring/
 .gitignore.bak
 .class
 *.sh
