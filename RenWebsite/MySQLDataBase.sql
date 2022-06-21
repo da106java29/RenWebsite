@@ -32,7 +32,7 @@ COLLATE utf8mb4_unicode_520_ci;
 -- 建立 會員(MEMBER) TABLE
 Create table IF NOT EXISTS MEMBER (
 	UUID bigint auto_increment not null PRIMARY KEY COMMENT "唯一自增鍵,尚未考慮主鍵問題.",
-	id varchar(16) not null UNIQUE COMMENT "User Accoud or login Account, Not Null",
+	id varchar(16) not null UNIQUE COMMENT "User Accoud or login Account, Not Null & Only(UNIQUE)",
     pwd varchar(30) not null COMMENT "User Password, Not Null",
     permission int not null COMMENT "User Permission, 0: NON-MEMBER; 1: NORMAL MEMBER; 99: Admin; etc... ",
     email varchar(50) null DEFAULT null COMMENT "USER EMAIL, Use for Permission, And send some Messages for User OR Administrator.",
